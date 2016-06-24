@@ -16,4 +16,4 @@
 
 **参考书**： 
 1. Bioinformatics and Functional Genomics by Jonathan Pevsner 
-2. 第二代测序信息处理》 [美] 布朗（Brown S.M.）著；于军 主译 
+2. 《第二代测序信息处理》 [美] 布朗（Brown S.M.）著；于军 主译 
