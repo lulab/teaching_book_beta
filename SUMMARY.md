@@ -1,3 +1,3 @@
 # Summary
 
-* [First Chapter]Linux Basics
+* 1.Linux Basics
