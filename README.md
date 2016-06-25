@@ -51,4 +51,4 @@
 
 |成员	|联系方式	|Github|
 |-|-|-|
-|鲁志|http://bioinfo.life.tsinghua.edu.cn| http://github.com/lulab |
+|ZJ Lu|http://bioinfo.life.tsinghua.edu.cn| http://github.com/lulab |
