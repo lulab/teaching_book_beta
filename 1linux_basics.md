@@ -7,42 +7,51 @@
 
 ####1. 了解基因组注释文件 (gff/gtf)
 
-1.1 了解gff和gtf文件格式：
+**1.1 了解gff和gtf文件格式**
 
 [http://www.genome.ucsc.edu/FAQ/FAQformat.html](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
 
-1.2 下载yeast的基因组注释文件：
+**1.2 下载yeast的基因组注释文件**
 
-```wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*.gtf.gz```
+首先
+```bash
+wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*.gtf.gz
+或者
+wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*
+```
 
-or
-
-```wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*```
-
-then
-
-```gunzip *.gtf.gz```
+然后
+```bash
+gunzip *.gtf.gz
+```
 
 
-1.3 统计所下载gff/gtf文件的大小，行数和exon数目。命令示范：
 
-man lsls -al *.gtfwc -l *.gtfcut -f 3 *.gtf | sort | uniq -c
+**1.3 统计所下载gff/gtf文件的大小，行数和exon数目**
+
+命令示范：
+
+```bash
+man ls
+ls -al *.gtfwc -l *.gtfcut -f 3 *.gtf | sort | uniq -c
+```
 
 
 ####2. 学会使用一个文本编辑器(vi, nano, emacs)编辑新的文件
 
-写一个可执行文件，寻找长度最长的3个exon, 汇报其长度。命令示范：       
+写一个可执行文件，寻找长度最长的3个exon, 汇报其长度。
 
+命令示范：       
 
-```vi run.sh```
+```vi run.sh``` -->
 
-       文件内容：
-       #!/bin/bash  （可能系统不同有差异，也可尝试省略次行语句）
-
-
-```grep exon *.gtf | awk '{print $5-$4+1}' | sort -n | tail -3```
-
-```chmod +x run.sh./run.sh```
+rush.sh的文件内容：
+    
+    #!/bin/bash  （可能系统不同有差异，也可尝试省略次行语句）
+```bash
+grep exon *.gtf | awk '{print $5-$4+1}' | sort -n | tail -3
+chmod +x run.sh./run.sh
+```
 
 
 
