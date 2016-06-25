@@ -5,7 +5,7 @@
 ###I. 上机任务
 ---
 
-1. 了解基因组注释文件 (gff/gtf)
+####1. 了解基因组注释文件 (gff/gtf)
 
 1.1 了解gff和gtf文件格式：
 
@@ -29,7 +29,9 @@ then
 man lsls -al *.gtfwc -l *.gtfcut -f 3 *.gtf | sort | uniq -c
 
 
-2. 学会使用一个文本编辑器(vi, nano, emacs)编辑新的文件： 写一个可执行文件，寻找长度最长的3个exon, 汇报其长度。命令示范：       
+####2. 学会使用一个文本编辑器(vi, nano, emacs)编辑新的文件
+
+写一个可执行文件，寻找长度最长的3个exon, 汇报其长度。命令示范：       
 
 
 ```vi run.sh```
