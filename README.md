@@ -26,8 +26,22 @@
 
 **参考书**： 
 
+生物信息：
+
 1. Bioinformatics and Functional Genomics by Jonathan Pevsner 
 2. 《第二代测序信息处理》 [美] 布朗（Brown S.M.）著；于军 主译 
+
+编程相关： 
+
+1. Linux: 《鸟哥的Linux私房菜-基础学习篇》， 主要学习以下2部分
+  1. Editor (e.g. VIM)
+  2. Shell Script (e.g. bash)
+2. Python (or Perl)
+  1.  《笨办法学 Python》（《Learn Python The Hard Way》）； 《Python编程入门》
+  2.  《Beginning Perl for Bioinformatics》
+3. R (or MATLAB):
+  1.  Quick R (online)
+  2.  《R语言实战》 (《R in action》); 
 
 
 ---
