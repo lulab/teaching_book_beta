@@ -17,18 +17,18 @@
 
 **主教材**: 
 
-《生物信息学》（第2版） [Bioinformatics] 李霞，雷健波，李亦学 等 编 
+《生物信息学》（第2版）李霞，雷健波，李亦学 等 编 
 
 **习题书**:
 
-《生物信息学实验教程》 [Bioinformatics Experiment] 吕巍，李滨 编 
+《生物信息学实验教程》  吕巍，李滨 编 
 
 
 **参考书**： 
 
 生物信息：
 
-1. Bioinformatics and Functional Genomics by Jonathan Pevsner 
+1. 《Bioinformatics and Functional Genomics》 by Jonathan Pevsner 
 2. 《第二代测序信息处理》 [美] 布朗（Brown S.M.）著；于军 主译 
 
 编程相关： 
