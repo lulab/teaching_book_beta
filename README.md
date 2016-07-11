@@ -1,7 +1,7 @@
 #生物信息学实战
 **Bioinformatics in Action**
 
-![](img/intro.png)
+![](labLogo5.1.png)
 
 本书是在清华大学《生物信息学导论》上机指南的基础上编写。
 
