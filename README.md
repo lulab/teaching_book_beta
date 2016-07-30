@@ -1,11 +1,11 @@
 #生物信息学实战
-**Bioinformatics in Action**
+**Bioinformatics in Action** 
+> **格物致知  知行合一**
 
 ![](img/intro.png)
 
 本书是在清华大学《生物信息学导论》上机指南的基础上编写。
 
-> **格物致知  知行合一**
 
 -- 
 
