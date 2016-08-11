@@ -1,33 +1,434 @@
-#Linux基础
+# Linux基础
 
 **Linux基础和基因组注释文件解读**
 
-###I.上机指南：###
----
-####0.熟悉终端，准备文件（基因组注释文件：*.gtf)
+### I.上机指南：
 
-* ```wget ftp://ftp.ensembl.org/pub/mnt2/release-73/gtf/saccharomyces_cerevisiae/*
-or
-wget ftp://ftp.ensembl.org/pub/mnt2/release-73/gtf/saccharomyces_cerevisiae/*.gtf.gz
-then
-gunzip *.gtf.gz
+---
+
+#### 0.熟悉终端，准备文件（基因组注释文件：\*.gtf\)
+
+man 查询某一命令的具体参数，例如：`man wget`
+
+wget [http:\/\/bioinfo.life.tsinghua.edu.cn\/public\/courses\/bioinfo\_intro\_2013\/Lab\/0.Linux\_Perl\_Basic.tar.gz](http://bioinfo.life.tsinghua.edu.cn/public/courses/bioinfo_intro_2013/Lab/0.Linux_Perl_Basic.tar.gz)
+
+#### 1.创建、删除与复制文件、文件夹
+
+cd    目录切换（区别相对路径与绝对路径）
+
+cd    到家目录
+
+cd \/home\/usrs
+
+cd ..    返回上级目录
+
+cd ..\/..    返回上上级目录
+
+mkdir    创建文件夹
+
+    mkdir folder
+cp    复制文件
+
+    cp old\_file new\_file
+mv    重命名或移动文件、文件夹
+
+mv file\_old\_name file\_new\_name    文件重命名
+
+mv folder\_old\_neme folder\_new\_name    文件夹重命名
+
+mv file new\_folder\/    将文件移动到新目录
+
+rmdir    删除文件夹
+
+    rmdir folder
+rm    删除文件、文件夹
+
+    rm file    删除文件
+
+    rm -r folder    删除文件夹
+
+####2.读写文件、文件夹
+
+两种文件格式： binary, text
+
+ls 显示文件夹中文件列表
+
+
+``
+ls -la 显示全部详细格式
+``
+
+``
+ll 显示文件详细信息
+``
+
+
+
+cat 直接查看文件
+
+more/less 翻页查看文件
+
+sed 编辑文件
+
+``
+sed ‘s/A/a/g’ file 替换（s），将文件中所有的A替换为a
+``
+
+``
+sed -n ‘3,6 p’ file 打印第3到6行
+``
+
+``
+ sed ‘5 q’ file 打印前5行
+``
+ 
+ 
+
+
+
+\> 重定向，将终端结果输出给文件，会创建新文件或者覆盖原文件
+
+``
+sed ‘s/A/a/g’ file > new_file
+``
+
+\>\> 重定向，将终端结果输出给文件，内容会加在原文件内容尾部
+
+``
+sed ‘5 q’ file >> new_file
+``
+
+
+####3.文件信息提取
+
+wc 查看文件行数、字数
+
+ ``
+ wc -l file 查看文件行
+``
+
+``
+ wc -c file 查看文件字数
+``
+
+head 查看文件前几行
+
+ ``
+head -n [N] file 查看文件前N行
+``
+
+tail 查看文件后几行
+
+``
+ tail -n [N] file 查看文件后N行
+``
+
+
+grep 文件中关键词搜索，返回行
+
+``
+grep ‘CDS’ file 显示匹配上 ‘CDS’ 的所有行
+``
+
+``
+grep -v ‘CDS’ file 显示没有匹配上’CDS’的所有行
+``
+
+``
+grep -w ‘CDS’ file 必须与整个字匹配，如果另外有’CDSs’这样的字符串，就不会与之匹配
+``
+
+``
+ grep -x ‘CDS’ file 仅匹配整行，即只显示整行就是’CDS’的所有行
+``
+
+cut 取出文件中的特定列或字符
+
+``
+ cut -f [N] file 取出第N列
+``
+
+``
+cut -d “;” -f [N] file 以”；”作为输入字段的分隔符（默认为制表符），取出第N列
+``
+
+sort 排序
+
+``
+ sort -n file 按照数值排序（默认为按照ASCII码排序）
+``
+
+``
+sort -k start[,stop] file 按照指定的字段进行排序；start指定开始处字段，stop指定结尾处字段；如果省略``
+
+``
+stop，默认到行尾
+``
+
+
+uniq 去重复
+
+``
+ uniq -c 去重复并且计算重复频率
+``
+
+| 管道，命令粘合剂，可将某命令的结果输出给另一个命令
+
+``
+head -n 20 file | tail -n 10
+``
+
+``
+cut -f 3 file | sort | uniq -c
+``
+
+####4.查找文件
+
+which 寻找可执行文件，显示路径
+
+whereis 寻找特定文件
+
+locate 按照关键词搜索文件
+
+
+####5. 查看、修改文件权限 
+
+chmod 修改文件的访问权限
+
+ chmod 755 file（数字模式）
+
+chmod -R 755 folder （数字模式）
+
+三位数分别表示： 本用户(user)，本用户组(group)，其他人(other)
+
+ 可读：r=1; 可写：w=2； 可执行/运行：x=4
+
+r表示可读，w表示可写，x表示可执
+
+``
+例如：777表示所有用户对文件具有读、写、执行权限；
+755表示文件所有者对文件具有读、写、执行权限，其他用户只具有读、执行权限
+``
+
+-R 修改该目录中所有文件的权限
+
+chmod a+x file （符号模式）
+
+chmod o+x file （符号模式）
+
+chmod -R a+x folder （符号模式）
+
+ a表示all, 表示特定user，g表示group，o表示other；
+
+
+####6.文件、文件夹的打包，压缩与解压缩
+
+gzip 压缩文件
+
+``
+gzip file
+``
+
+gunzip 解压缩文件（.gz文件）
+
+``
+gunzip file.gz
+``
+
+tar 打包压缩文件、文件夹的产生与解压缩
+
+ ``
+tar -zcv -f folder.tar.gz folder 打包压缩文件夹（gzip格式）
+``
+
+``
+tar -jcv -f folder.tar.gz folder 打包压缩文件夹（bzip2格式）
+``
+
+``
+ tar –ztv -f folder.tar.gz 查看压缩文件夹中的文件名（gzip格式）
+``
+
+``
+ tar –jtv -f folder.tar.gz 查看压缩文件夹中的文件名（bzip2格式）
+``
+
+``
+tar -zxv –f folder.tar.gz 打开包并解压缩（gzip格式）
+``
+
+``
+tar -jxv –f folder.tar.gz 打开包解压缩（bzip2格式）
+``
+
+
 ```
+-z 压缩（gzip格式）
+
+-j 压缩（bzip2格式）
+
+-c 打包
+
+-v 显示过程
+
+-f 新建的压缩文件名
+
+-t 查看压缩包里的文件名
+
+-x 解压缩
+```
+
+
+####7. 系统及进程
+
+top 监视计算机使用情况
+
+ctrl-c 终止当前进程
+
+ctrl-z 暂停当前进程
+
+bg 让暂停的进程在后台继续运行
+
+fg 把后台运行的进程调到前台
+
+ps 列出所有用户的进程
+
+``
+ps -e 列出所有的用户的进程
+``
+
+``
+ ps -f 列出详细的列表
+``
+
+``
+ ps aux
+``
+
+``
+ ps -edalf
+``
+kill 终止特定进程
+
+ kill PID_list 终止PID进程
+
+date 显示系统的时间和日期，可用于为程序运行时长进行计时
+
+
+
+####8.文本编辑 Vi /Vim
+
+ 4种工作模式: 编辑模式、 Visual模式、命令模式.
+
+```
+模式切换方法:
+
+插入等模式到编辑模式: 按 Esc
+
+编辑模式到插入模式: 输入 i
+
+编辑模式到Visual模式: 输入 v
+
+编辑模式到命令模式: 输入 
+```
+
+#####1. 编辑模式下:
+
+上下左右移动光标: 键盘方向键
+
+屏幕向下移动半页: ctrl+d
+
+屏幕向上移动半页: ctrl+u
+
+移动到当前行的最前面字符处: ^ 或者 0
+
+移动到当前行的最后面字符处: $
+
+移动到文件的第一行: gg
+
+移动到文件的最后一行: G
+
+移动到文件的第 n 行: n<Enter>
+
+删除: : ndd (删除当前行及其后 n-1 行)
+
+复制: : nyy (将当前行开始的 n 行内容复制到缓冲区)
+
+粘贴: : p (将缓冲区的内容复制到光标所在处)
+
+查找字符串: /string (向光标之下查找字符串 string)
+
+n 移动到下一个 string 字符串
+
+N 移动到上一个 string 字符串
+
+取消前一次操作: u
+
+重做前一次操作: ctrl+r
+
+
+
+#####2. Visual模式下：
+
+选中文字: 键盘方向键
+
+复制： y 
+
+粘贴： p 
+
+删除： d
+
+#####3. 命令模式下：
+
+替换字符串: :%s/string1/string2/ 或者 :%s/string1/string2/gc
+
+ ``
+(/g 替换文中所有match，/c替换前要求确认: y-接受替换，n-不接受)
+``
+
+文件存盘: :w
+
+存盘并退出: :wq
+
+不存盘退出： q!
+
+打开文件: :r file_name
+
+新建文件: :e file_name
+
+文件另存为 : :w file_name
+
+移动到指定的行处: :n
+
+鼠标定位: :set mouse=a
+
+自动缩进: :set autoindent
+
+显示行号: :set number
+
+执行 shell 命令: :!command
+
+
+
+
 
 
 
 
 ###II. 上机任务
+
 ---
 
-####1. 了解基因组注释文件 (gff/gtf)
+#### 1. 了解基因组注释文件 \(gff\/gtf\)
 
 **1.1 了解gff和gtf文件格式**
 
-[http://www.genome.ucsc.edu/FAQ/FAQformat.html](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
+[http:\/\/www.genome.ucsc.edu\/FAQ\/FAQformat.html](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
 
 **1.2 下载yeast的基因组注释文件**
 
 首先
+
 ```bash
 wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*.gtf.gz
 或者
@@ -35,13 +436,12 @@ wget ftp://ftp.ensembl.org/pub/mnt2/release-77/gtf/saccharomyces_cerevisiae/*
 ```
 
 然后
+
 ```bash
 gunzip *.gtf.gz
 ```
 
-
-
-**1.3 统计所下载gff/gtf文件的大小，行数和exon数目**
+**1.3 统计所下载gff\/gtf文件的大小，行数和exon数目**
 
 命令示范：
 
@@ -50,35 +450,33 @@ man ls
 ls -al *.gtfwc -l *.gtfcut -f 3 *.gtf | sort | uniq -c
 ```
 
-
-####2. 学会使用一个文本编辑器(vi, nano, emacs)编辑新的文件
+#### 2. 学会使用一个文本编辑器\(vi, nano, emacs\)编辑新的文件
 
 写一个可执行文件，寻找长度最长的3个exon, 汇报其长度。
 
-命令示范：       
+命令示范：
 
-```vi run.sh``` -->
+`vi run.sh` --&gt;
 
 rush.sh的文件内容：
-    
-    #!/bin/bash  （可能系统不同有差异，也可尝试省略次行语句）
+
+```
+#!/bin/bash  （可能系统不同有差异，也可尝试省略次行语句）
+```
+
 ```bash
 grep exon *.gtf | awk '{print $5-$4+1}' | sort -n | tail -3
 chmod +x run.sh./run.sh
 ```
 
+### III. 上机作业：
 
-
-###III. 上机作业：
 ---
 
 1. 查找、理解并注释上述每一个语句和参数的意义
 
-2. 解释gtf/gff文件中$5和$4代表什么，exon长度应该是$5-$4+1还是$5-$4？
+2. 解释gtf\/gff文件中$5和$4代表什么，exon长度应该是$5-$4+1还是$5-$4？
 
 3. 有新的方法加分，但必须注释清楚每个语句和参数的意义和结果。
-
-
-
 
 
