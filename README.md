@@ -73,3 +73,7 @@
 |成员	|联系方式	|Github|
 |-|-|-|
 |ZJ Lu|http://bioinfo.life.tsinghua.edu.cn| http://github.com/lulab |
+
+###虚拟机
+We also provide a Linux virtural machine (https://pan.baidu.com/s/1ETkey), which has some bioinfo software pre-installed. You can download the file and open it with **VirtualBox** in Windows or Mac.
+
