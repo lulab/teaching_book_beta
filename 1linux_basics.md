@@ -2,7 +2,21 @@
 
 **Linux基础和基因组注释文件解读**
 
-###I. 上机任务
+###I.上机指南：###
+---
+####0.熟悉终端，准备文件（基因组注释文件：*.gtf)
+
+* ```wget ftp://ftp.ensembl.org/pub/mnt2/release-73/gtf/saccharomyces_cerevisiae/*
+or
+wget ftp://ftp.ensembl.org/pub/mnt2/release-73/gtf/saccharomyces_cerevisiae/*.gtf.gz
+then
+gunzip *.gtf.gz
+```
+
+
+
+
+###II. 上机任务
 ---
 
 ####1. 了解基因组注释文件 (gff/gtf)
@@ -55,7 +69,7 @@ chmod +x run.sh./run.sh
 
 
 
-###II. 上机作业：
+###III. 上机作业：
 ---
 
 1. 查找、理解并注释上述每一个语句和参数的意义
@@ -63,4 +77,8 @@ chmod +x run.sh./run.sh
 2. 解释gtf/gff文件中$5和$4代表什么，exon长度应该是$5-$4+1还是$5-$4？
 
 3. 有新的方法加分，但必须注释清楚每个语句和参数的意义和结果。
+
+
+
+
 
