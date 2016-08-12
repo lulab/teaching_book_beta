@@ -9,7 +9,7 @@
 
 ####0. 基础知识
 
-**0.1存储sequence的常用文件格式**
+**1. 存储sequence的常用文件格式**
 
 **FASTA格式** （*.fasta or *.fa )
 
@@ -19,7 +19,7 @@
 The word following the ">" symbol is the identifier of the sequence, and the rest of the line is the description (optional). Normally, identifiers are simply protein accession, name or Entrez gi's (e.g., Q5I7T1, AG10B_HUMAN, 129295), but a bar-separated NCBI sequence identifier (e.g., gi|129295) will also be accepted. Any arbitrary user-specified sequence identifier can also be used (e.g., CLONE00073452).
 `
 
-**0.2 安装blast及其子程序 **
+**2. 安装blast及其子程序 **
 
 (可能已经安装好，尝试输入blastn回车看看)
 
@@ -43,13 +43,13 @@ b. 64位机器安装文件： 如   ncbi-blast-2.2.28+-x64-linux.tar.gz
 
 （可以通过 uname –a 查看机器类型是64还是32位）
 
-**0.3 阅读命令帮助**
+**3. 阅读命令帮助**
 
 一般下载的程序：   blastn –h， or  blastn –help
 
 Linux原生命令或程序：  man ls
 
-**0.4 进入工作目录**
+**4. 进入工作目录**
 
 进入工作目录的方法:
 
@@ -63,33 +63,44 @@ Linux原生命令或程序：  man ls
              
 		../filename  （上一级目录下的文件）  ../../filename  （上两级目录下的文件）
         
-####1. Pairwise alignment (两条序列比对)
+####I. Pairwise alignment (两条序列比对)
 
-**1.1 Protein sequence alignment**
+---
+
+
+
+** Protein sequence alignment**
 
 Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序
 
 blastp  -query ./protein/VIM.fasta  -subject   ./protein/NMD.fasta   -out output.blastp
 
-**1.2 DNA sequence alignment**
+** DNA sequence alignment**
 
 Note：H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
 
 blastn  -query ./dna/H1N1-HA.fasta -subject ./dna/H7N9-HA.fasta  -out output.blastn
 
 
-####2.  一条序列与远程序列库比对
+####II.  一条序列与远程序列库比对
 
-**2.1 Protein sequence alignment  比对远程pdb数据库**
+** Protein sequence alignment  比对远程pdb数据库**
 
 blastp  -query    ./protein/VIM.fasta  -db   pdb      -remote -out protein_remote.blastp
 	
-**2.2 DNA sequence alignment  比对远程nr数据库**
+** DNA sequence alignment  比对远程nr数据库**
 
 blastn  -query    ./dna/H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 
 
-###III. 一条序列在自定义的序列库里比对 (例如：在yeast基因组序列中搜索)：
+###III. 一条序列在自定义的序列库里比对 
+---
+
+
+(例如：在yeast基因组序列中搜索)：
+
+
+
 
 **Step 1: 建库**
 
