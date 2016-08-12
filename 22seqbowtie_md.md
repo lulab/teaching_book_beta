@@ -90,7 +90,9 @@ bowtie  -v  1  -m 10  --best  --strata  bowtie-src/indexes/e_coli  -q  e_coli_10
 
 
         
-perl   sam2bed.pl    THA1.sam  >   THA1.bed
+perl     sam2bed.pl    
+
+THA1.sam  >   THA1.bed
 
 Note:  bed文件格式（tab分隔）：
 1. chrom - The name of the chromosome (e.g. chr3, chrY, chr2_random) or scaffold (e.g. scaffold10671).
@@ -103,4 +105,5 @@ The additional optional BED fields are:
 上传bed文件到Genome Browser浏览时，如果文件过大，或者MT染色体不识别，可以用如下方法：
 
 grep -v chrmt THA1.bed > THA1_new.bed   (输出一个不含chromosome MT的文件）
+
 grep chrI THA1.bed > THA1_chrI.bed  （输出一个只chromosome I的文件）
