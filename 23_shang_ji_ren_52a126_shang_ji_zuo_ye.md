@@ -2,6 +2,11 @@
 
 ###I. 上机任务：
 
+
+---
+
+
+
 ####1. 了解序列文件（fasta和fastq）
 
 http://en.wikipedia.org/wiki/FASTA_format
@@ -17,11 +22,16 @@ https://genome.ucsc.edu/cgi-bin/hgGateway
 
 
 ###II. 上机作业：
+
+
+---
+
+
 ####1.解释fasta和fastq文件的格式；  并指出两者有什么不同。 
 ####2. 解释blast输出的结果。
 ####3. 学会在UCSC Genome Browser上浏览自己上传的bed文件，上交截图。
 
-注：上传bed文件到Genome Browser浏览时，如果文件过大，或者MT染色体不识别，可以用如下方法：
+**注：上传bed文件到Genome Browser浏览时，如果文件过大，或者MT染色体不识别，可以用如下方法：**
 
 ``
 grep -v chrmt THA1.bed > THA1_new.bed   (输出一个不含chromosome MT的文件）
