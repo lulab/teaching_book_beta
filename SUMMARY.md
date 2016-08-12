@@ -6,5 +6,5 @@
    * [2.1 序列比对 - Blast](21seqblast_md.md)
    * [2.2 序列比对 - Bowtie](22seqbowtie_md.md)
 * [3.RNA二级结构预测](3.md)
-* 4.组学大数据分析
+* [4.组学大数据分析](4genomics.md)
 
