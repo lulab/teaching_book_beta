@@ -71,7 +71,7 @@ Linux原生命令或程序：  man ls
 
 ** Protein sequence alignment**
 
-Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序
+Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序列
 
 blastp  -query ./protein/VIM.fasta  -subject   ./protein/NMD.fasta   -out output.blastp
 
