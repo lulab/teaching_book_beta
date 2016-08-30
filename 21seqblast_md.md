@@ -73,13 +73,22 @@ Linux原生命令或程序：  man ls
 
 Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序列
 
-blastp  -query ./protein/VIM.fasta  -subject   ./protein/NMD.fasta   -out output.blastp
+文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
+
+
+```
+blastp  -query ./VIM.fasta  -subject   ./NMD.fasta   -out output.blastp
+```
 
 ** DNA sequence alignment**
 
 Note：H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
 
-blastn  -query ./dna/H1N1-HA.fasta -subject ./dna/H7N9-HA.fasta  -out output.blastn
+文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
+
+``
+blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
+``
 
 
 ####II.  一条序列与远程序列库比对
