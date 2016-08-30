@@ -73,7 +73,7 @@ Linux原生命令或程序：  man ls
 
 Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序列
 
-文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
+当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
 
 
 ```
@@ -84,7 +84,7 @@ blastp  -query ./VIM.fasta  -subject   ./NMD.fasta   -out output.blastp
 
 Note：H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
 
-文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
+当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
 
 ``
 blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
@@ -95,29 +95,38 @@ blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
 
 ** Protein sequence alignment  比对远程pdb数据库**
 
-blastp  -query    ./protein/VIM.fasta  -db   pdb      -remote -out protein_remote.blastp
+当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
+
+``
+blastp  -query    ./VIM.fasta  -db   pdb      -remote -out protein_remote.blastp
+``
 	
 ** DNA sequence alignment  比对远程nr数据库**
 
-blastn  -query    ./dna/H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
+当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
+
+``
+blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
+``
 
 
 ###III. 一条序列在自定义的序列库里比对 
 ---
 
 
-(例如：在yeast基因组序列中搜索)：
+(例如：在yeast基因组序列中搜索Yeast.fasta序列)
 
-
+当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast／
 
 
 **Step 1: 建库**
 
 
-(先清空一下之前的残留文件： rm database/*)    
+(先清空一下之前的残留文件： rm ./database/*)    
 
-makeblastdb -dbtype nucl -in dna/YeastGenome.fa -out database/YeastGenome
-
+``
+makeblastdb -dbtype nucl -in ./dna/YeastGenome.fa -out ./database/YeastGenome
+``
 
         -dbtype:待建库的类型 （nucl, prot)  
         -in:待建库的序列文件     
@@ -125,4 +134,4 @@ makeblastdb -dbtype nucl -in dna/YeastGenome.fa -out database/YeastGenome
 
 **Step 2: 比对**
 
-      blastn -query ./dna/Yeast.fasta -db database/YeastGenome -out Yeast.blastn
+      blastn -query ./dna/Yeast.fasta -db ./database/YeastGenome -out ./dna/Yeast.blastn
