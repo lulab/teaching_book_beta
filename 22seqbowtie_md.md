@@ -18,8 +18,11 @@
 Notations
 
 	•	<fastq>, <blocks> and so on represents non-terminal symbols.
-	•	Characters in red are regex-like operators.
+	•	Characters in italic are regex-like operators.
 	•	'\n' stands for the Return key.
+
+
+
 
 Syntax
 <fastq>
