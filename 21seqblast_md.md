@@ -45,7 +45,7 @@ b. 64位机器安装文件： 如   ncbi-blast-2.2.28+-x64-linux.tar.gz
 
 **3. 阅读命令帮助**
 
-一般下载的程序：   blastn –h， or  blastn –help
+一般下载的程序：   blastn –h， or  blastn --help
 
 Linux原生命令或程序：  man ls
 
