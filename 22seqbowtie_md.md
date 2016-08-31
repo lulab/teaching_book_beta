@@ -37,10 +37,14 @@ Syntax
 http://bowtie-bio.sourceforge.net/tutorial.shtml
 
 **3.  更多基因组文件格式**
-gtf/gff, bed, …
+gtf/gff, bed, …详见
 http://genome.ucsc.edu/FAQ/FAQformat.html
 
-4.  bowtie程序下载 (可能已经安装好，尝试输入bowtie回车看看)
+**4.  bowtie程序下载 **
+
+(可能已经安装好，尝试输入bowtie回车看看)
+
+若未安装，可访问一下地址进行安装
 
 http://sourceforge.net/projects/bowtie-bio/files/bowtie/1.0.0/
 
@@ -50,14 +54,18 @@ i386 or i686 (32): bowtie-1.0.0-linux-i386.zip
 
 
 
-####I. Mapping using Bowtie （以酵母和e.coli基因组为例）
+####I. Mapping using Bowtie 
+（以酵母和e.coli基因组为例）
+
 
 ---
+**Note: **文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/bowtie/
+
 命令如下：
 
-bowtie  -v  2  -m 10  --best  --strata  BowtieIndex/YeastGenome  -f  THA1.fa  -S  THA1.sam
+bowtie  -v  2  -m 10  --best  --strata  ./BowtieIndex/YeastGenome  -f  THA1.fa  -S  THA1.sam
         
-bowtie  -v  1  -m 10  --best  --strata  bowtie-src/indexes/e_coli  -q  e_coli_1000_1.fq  -S e_coli_1000_1.sam
+bowtie  -v  1  -m 10  --best  --strata  ./bowtie-src/indexes/e_coli  -q  e_coli_1000_1.fq  -S e_coli_1000_1.sam
 
 ```
 -v <int>         report end-to-end hits with <=v mismatches; ignore qualities
@@ -77,7 +85,8 @@ bowtie  -v  1  -m 10  --best  --strata  bowtie-src/indexes/e_coli  -q  e_coli_10
 -S		输出文件名，格式为sam格式
 ```
 
-####II. 格式转换（为了便于其它软件(例如IGB)处理，常将sam处理成Bed格式）：
+####II. 格式转换
+（为了便于其它软件(例如IGB)处理，常将sam处理成Bed格式）：
 
 ---
 
@@ -94,7 +103,8 @@ Note:  bed文件格式（tab分隔）：
 The additional optional BED fields are:
 4. name - Defines the name of the BED line. This label is displayed to the left of the BED line in the Genome Browser window when the track is open to full display mode or directly to the left of the item in pack mode.
 5. score - A score between 0 and 1000.
-…
+
+
 上传bed文件到Genome Browser浏览时，如果文件过大，或者MT染色体不识别，可以用如下方法：
 
 grep -v chrmt THA1.bed > THA1_new.bed   (输出一个不含chromosome MT的文件）
