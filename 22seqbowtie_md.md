@@ -42,7 +42,7 @@ http://genome.ucsc.edu/FAQ/FAQformat.html
 
 **4.  bowtie程序下载 **
 
-(可能已经安装好，尝试输入bowtie回车看看)
+>可能已经安装好，尝试输入bowtie回车看看
 
 若未安装，可访问一下地址进行安装
 
@@ -59,7 +59,7 @@ i386 or i686 (32): bowtie-1.0.0-linux-i386.zip
 
 
 ---
-**Note: **文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/bowtie/
+>文件位置：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/bowtie/
 
 命令如下：
 
@@ -92,9 +92,7 @@ bowtie  -v  1  -m 10  --best  --strata  ./bowtie-src/indexes/e_coli  -q  e_coli_
 
 
         
-perl     sam2bed.pl    
-
-THA1.sam  >   THA1.bed
+perl     sam2bed.pl     THA1.sam  >   THA1.bed
 
 Note:  bed文件格式（tab分隔）：
 1. chrom - The name of the chromosome (e.g. chr3, chrY, chr2_random) or scaffold (e.g. scaffold10671).
