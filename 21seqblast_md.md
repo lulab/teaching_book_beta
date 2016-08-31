@@ -21,7 +21,7 @@ The word following the ">" symbol is the identifier of the sequence, and the res
 
 **2. 安装blast及其子程序 **
 
-(可能已经安装好，尝试输入blastn回车看看)
+>可能已经安装好，尝试输入blastn回车看看
 
 blastn, blastp，blastx, …
     
@@ -73,7 +73,7 @@ Linux原生命令或程序：  man ls
 
 Note：VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序列
 
-当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
+>当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
 
 
 ```
@@ -84,7 +84,7 @@ blastp  -query ./VIM.fasta  -subject   ./NMD.fasta   -out output.blastp
 
 Note：H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
 
-当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
+>当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
 
 ``
 blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
@@ -95,7 +95,7 @@ blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
 
 ** Protein sequence alignment  比对远程pdb数据库**
 
-当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
+>当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/protein/
 
 ``
 blastp  -query    ./VIM.fasta  -db   pdb      -remote -out protein_remote.blastp
@@ -103,7 +103,7 @@ blastp  -query    ./VIM.fasta  -db   pdb      -remote -out protein_remote.blastp
 	
 ** DNA sequence alignment  比对远程nr数据库**
 
-当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
+>当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast/dna
 
 ``
 blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
@@ -116,7 +116,7 @@ blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 
 (例如：在yeast基因组序列中搜索Yeast.fasta序列)
 
-当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast／
+>当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast／
 
 
 **Step 1: 建库**
