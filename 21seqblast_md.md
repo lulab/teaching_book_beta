@@ -115,8 +115,7 @@ VIM.fasta 与 NMD.fasta 分别是金属beta酶家族的两个亚种酶的序列
 ```
 blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
 ```
-
-H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
+ H1N1-HA.fasta 与H7N9-HA.fasta 是流感病毒序列文件
 
 
 ####III.  一条序列与远程序列库比对
