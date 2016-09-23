@@ -148,7 +148,7 @@ blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 ---
 
 
-(例如：在yeast基因组序列中搜索Yeast.fasta序列)
+例如：在yeast基因组序列中搜索Yeast.fasta序列
 
 当前工作目录：/home/cs/Bioinfo_Lab/1.Sequence/1.seq_align/blast／
 
@@ -160,16 +160,16 @@ blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 ```
 rm ./database/*    
 ```
-
+建库
 ```
 makeblastdb -dbtype nucl -in ./dna/YeastGenome.fa -out ./database/YeastGenome
 ```
 
-*-dbtype:待建库的类型（nucl, prot)*
+*-dbtype: 待建库的类型（nucl, prot)*
 
-*-in:待建库的序列文件*
+*-in: 待建库的序列文件*
 
-*-out:序列库名前缀*
+*-out: 序列库名前缀*
 
 **Step 2: 比对**
 
