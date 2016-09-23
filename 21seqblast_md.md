@@ -7,7 +7,7 @@
 
 
 
-####0. 基础知识
+####I. 基础知识
 
 **1. 存储sequence的常用文件格式**
 
@@ -63,7 +63,7 @@ Linux原生命令或程序：  man ls
              
 		../filename  （上一级目录下的文件）  ../../filename  （上两级目录下的文件）
         
-####I. Pairwise alignment (两条序列比对)
+####II. Pairwise alignment (两条序列比对)
 
 ---
 
@@ -91,7 +91,7 @@ blastn  -query ./H1N1-HA.fasta -subject ./H7N9-HA.fasta  -out output.blastn
 ``
 
 
-####II.  一条序列与远程序列库比对
+####III.  一条序列与远程序列库比对
 
 ** Protein sequence alignment  比对远程pdb数据库**
 
@@ -110,7 +110,7 @@ blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 ``
 
 
-###III. 一条序列在自定义的序列库里比对 
+###IV. 一条序列在自定义的序列库里比对 
 ---
 
 
