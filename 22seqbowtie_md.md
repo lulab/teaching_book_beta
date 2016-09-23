@@ -21,13 +21,13 @@ Notations
 	•	Characters in red are regex-like operators.
 	•	'\n' stands for the Return key.
 Syntax
-
-| **``<fastq>:=<block>+``** |
-| -- |
-| **``<block>:=@<seqname>\n<seq>\n+[<seqname>]\n<qual>\n ``**|
-|**``<seqname>:=[A-Za-z0-9_.:-]+``**|
-|**``<seq>:=[A-Za-z\n\.~]+``**|
-| **``<qual>:=[!-~\n]+ ``**|
+```
+<fastq>:=<block>+
+<block>:=@<seqname>\n<seq>\n+[<seqname>]\n<qual>\n 
+<seqname>:=[A-Za-z0-9_.:-]+
+<seq>:=[A-Za-z\n\.~]+
+<qual>:=[!-~\n]+ 
+```
 
 
 
