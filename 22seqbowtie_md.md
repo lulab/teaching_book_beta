@@ -15,19 +15,25 @@
 
 **FASTQ Format** (*.fastq or *.fq)
 
-Notations
 
-	•	<fastq>, <blocks> and so on represents non-terminal symbols.
-	•	Characters in red are regex-like operators.
-	•	'\n' stands for the Return key.
-Syntax
+`
+FASTQ format stores sequences and Phred qualities in a single file. It is concise and compact. FASTQ is first widely used in the Sanger Institute and therefore we usually take the Sanger specification and the standard FASTQ format, or simply FASTQ format. Although Solexa/Illumina read file looks pretty much like FASTQ, they are different in that the qualities are scaled differently. In the quality string, if you can see a character with its ASCII code higher than 90, probably your file is in the Solexa/Illumina format.
+`
+
+***Example***
+
 ```
-<fastq>:=<block>+
-<block>:=@<seqname>\n<seq>\n+[<seqname>]\n<qual>\n 
-<seqname>:=[A-Za-z0-9_.:-]+
-<seq>:=[A-Za-z\n\.~]+
-<qual>:=[!-~\n]+ 
+@EAS54_6_R1_2_1_413_324
+
+CCCTTCTTGTCTTCAGCGTTTCTCC
+
++
+
+;;3;;;;;;;;;;;;7;;;;;;;88
+
 ```
+  
+
 
 
 
