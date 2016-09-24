@@ -159,7 +159,7 @@ blastn  -query    ./H1N1-HA.fasta    -db  nr    -remote   -out dna_remote.blastn
 ```
 rm ./database/*    
 ```
-建库
+建库：
 ```
 makeblastdb -dbtype nucl -in ./dna/YeastGenome.fa -out ./database/YeastGenome
 ```
