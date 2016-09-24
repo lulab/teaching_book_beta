@@ -108,7 +108,7 @@ bowtie  -v  1  -m 10  --best  --strata  ./bowtie-src/indexes/e_coli  -q  e_coli_
 命令如下：
  
 ``` 
-perl     sam2bed.pl     THA1.sam  >   THA1.bed
+perl sam2bed.pl THA1.sam > HA1.bed
 ```
 
 
