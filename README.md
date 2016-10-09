@@ -73,7 +73,8 @@
 |成员	|联系方式	|Github|
 |-|-|-|
 |Zhi J. Lu|http://bioinfo.life.tsinghua.edu.cn| http://github.com/lulab |
-|Siqi Wang|http://bioinfo.life.tsinghua.edu.cn| http://github.com/lulab |
+|Siqi Wang|http://bioinfo.life.tsinghua.edu.cn| - |
+|Gang Xu|http://bioinfo.life.tsinghua.edu.cn| - |
 
 ###虚拟机
 We also provide a Linux virtural machine (https://pan.baidu.com/s/1ETkey), which has some bioinfo software pre-installed. You can download the file and open it with **VirtualBox** in Windows or Mac.
