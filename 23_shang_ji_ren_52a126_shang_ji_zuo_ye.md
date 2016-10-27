@@ -10,7 +10,7 @@
 
   [FASTQ format](http://en.wikipedia.org/wiki/FASTQ_format)
 
-2.  学会在Terminal中运行blast和bowtie
+2.  学会在Terminal中运行blast和bowtie。
 3.  写一个脚本文件 (run.sh)自动并连续运行一个blast任务和一个bowtie任务。
 4.  把sam格式转换为bed格式，并在UCSC Genome Browser上浏览。
 
