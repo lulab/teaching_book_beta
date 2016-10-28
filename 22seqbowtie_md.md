@@ -47,7 +47,7 @@ CCCTTCTTGTCTTCAGCGTTTCTCC
 gtf/gff, bed, …
 
 详见
-[Reference link](http://genome.ucsc.edu/FAQ/FAQformat.html)
+[Reference link](http://genome.ucsc.edu/FAQ/FAQformat.html)：*http://genome.ucsc.edu/FAQ/FAQformat.html*
 
 **4.  bowtie程序下载 **
 
