@@ -6,9 +6,9 @@
 ---
 1. 了解序列文件（fasta和fastq）
 
-  [FASTA format](http://en.wikipedia.org/wiki/FASTA_format)
+  [FASTA format](http://en.wikipedia.org/wiki/FASTA_format)：*http://en.wikipedia.org/wiki/FASTA_format*
 
-  [FASTQ format](http://en.wikipedia.org/wiki/FASTQ_format)
+  [FASTQ format](http://en.wikipedia.org/wiki/FASTQ_format)：*http://en.wikipedia.org/wiki/FASTQ_format*
 
 2.  学会在Terminal中运行blast和bowtie。
 3.  写一个脚本文件 (run.sh)自动并连续运行一个blast任务和一个bowtie任务。
@@ -20,11 +20,11 @@
  
 Reference：
 
-[samtools使用指南](http://samtools.sourceforge.net/)
+[samtools使用指南](http://samtools.sourceforge.net/)：*http://samtools.sourceforge.net/*
 
-[序列文件格式说明](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
+[序列文件格式说明](http://www.genome.ucsc.edu/FAQ/FAQformat.html)：*http://www.genome.ucsc.edu/FAQ/FAQformat.html*
 
-[UCSC Genome Browser](https://genome.ucsc.edu/cgi-bin/hgGateway)
+[UCSC Genome Browser](https://genome.ucsc.edu/cgi-bin/hgGateway)：*https://genome.ucsc.edu/cgi-bin/hgGateway*
 
 ###II. 上机作业：
 
