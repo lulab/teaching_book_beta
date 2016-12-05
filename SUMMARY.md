@@ -8,5 +8,5 @@
    * [2.3 上机任务 & 上机作业](23_shang_ji_ren_52a126_shang_ji_zuo_ye.md)
 * [3.RNA二级结构预测](3.Structure.md)
 * [4.组学大数据分析](4.Genomics.md)
-   * 4.1 Advanced RNA-seq analyses
+   * [4.1 Advanced RNA-seq analyses](41_advanced_rna-seq_analyses.md)
 
