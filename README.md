@@ -39,17 +39,17 @@
 
 编程相关：
 
-1. Linux: 《鸟哥的Linux私房菜-基础学习篇》， 主要学习以下2部分
-   1. Editor \(e.g. VIM\)
+1. Linux: 《鸟哥的Linux私房菜-基础学习篇》， 主要学习以下2部分  
+   1. Editor \(e.g. VIM\)  
    2. Shell Script \(e.g. bash\)
 
-2. Python \(or Perl\)
-   1. 《笨办法学 Python》（《Learn Python The Hard Way》）； 《Python编程入门》
+2. Python \(or Perl\)  
+   1. 《笨办法学 Python》（《Learn Python The Hard Way》）； 《Python编程入门》  
    2. 《Beginning Perl for Bioinformatics》
 
-3. R \(or MATLAB\):
-   1. Quick R \(online\)
-   2. 《R语言实战》 \(《R in action》\); 
+3. R \(or MATLAB\):  
+   1. Quick R \(online\)  
+   2. 《R语言实战》 \(《R in action》\);
 
 
 ---
@@ -58,15 +58,14 @@
 
 任何问题都欢迎直接联系我们:
 
-* 鲁 志  实验室
+* 鲁 志  实验室
 * 地址：清华大学 生命科学学院
 * 电话: 010-6278-9217
 * 电子邮箱: lulab AT biomed.tsinghua.edu.cn
-* 主页:  [http://bioinfo.life.tsinghua.edu.cn](http://bioinfo.life.tsinghua.edu.cn/)
-* 著作:  [http://](http://www.gitbook.com/@lulab)  [www.gitbook.com/@lulab](http://www.gitbook.com/@lulab)
-* 编程: [http://github.com/lulab](http://github.com/lulab)
+* 主页: [http://bioinfo.life.tsinghua.edu.cn](http://bioinfo.life.tsinghua.edu.cn/)
+* 著作: [http://](http://www.gitbook.com/@lulab)  [www.gitbook.com/@lulab](http://www.gitbook.com/@lulab)
+* 编程: [http://github.com/lulab](http://github.com/lulab)
 * 软件: [http://software.ncrnalab.org](http://software.ncrnalab.org/)
-
 
 ---
 
