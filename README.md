@@ -40,18 +40,21 @@
 编程相关：
 
 1. Linux: 《鸟哥的Linux私房菜-基础学习篇》， 主要学习以下2部分
+
    * Editor \(e.g. VIM\)  
    * Shell Script \(e.g. bash\)
 
-2. Python \(or Perl\)  
+2. Python \(or Perl\)
+
    * 《笨办法学 Python》（《Learn Python The Hard Way》） 
    * 《Python编程入门》  
+   *   http://www.pythonlearn.com/
    * 《Beginning Perl for Bioinformatics》
 
-3. R \(or MATLAB\):  
-   *  Quick R \([online](http://www.statmethods.net/)\)
-   * 《R语言实战》 \(《R in action》\)
+3. R \(or MATLAB\):
 
+   * Quick R \([online](http://www.statmethods.net/)\)
+   * 《R语言实战》 \(《R in action》\)
 
 ---
 
