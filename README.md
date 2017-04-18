@@ -46,9 +46,9 @@
 
 2. Python \(or Perl\)
 
-   * 《笨办法学 Python》（《Learn Python The Hard Way》） 
+   * 《笨办法学 Python》（《Learn Python The Hard Way》）[online version](https://learnpythonthehardway.org/book/) 
    * 《Python编程入门》  
-   *   http://www.pythonlearn.com/
+   * [http://www.pythonlearn.com/](http://www.pythonlearn.com/)
    * 《Beginning Perl for Bioinformatics》
 
 3. R \(or MATLAB\):
