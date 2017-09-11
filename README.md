@@ -155,7 +155,7 @@ We also provide a Linux virtural machine \([https://pan.baidu.com/s/1ETkey](http
 
 4. 基本物理课程：如《物理化学》或《生物物理》
 
-5. 基本计算机课程：如《C语言》, Linux基础 等
+5. 基本计算机课程：如 Linux基础 ，C或Python或Perl
 
 
 
