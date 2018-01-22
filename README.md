@@ -26,6 +26,8 @@
 
 《生物信息学》（第2版）李霞，雷健波，李亦学 等 编
 
+《[Bioinformatics Data Skills](http://note.youdao.com/noteshare?id=e2364c0cde65fdb01afadf6a06f5a187)》
+
 **习题书**:
 
 《生物信息学实验教程》  吕巍，李滨 编
