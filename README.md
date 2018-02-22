@@ -1,4 +1,4 @@
-# 生物信息学实战
+# 生物信息学实践
 
 **Bioinformatics in Action**
 
@@ -24,20 +24,21 @@
 
 **主教材**:
 
-《生物信息学》（第2版）李霞，雷健波，李亦学 等 编
+《[生物信息学](http://ibi.zju.edu.cn/bioinplant/courses/jianyaomulu.htm)》主编：樊龙江
 
-《[Bioinformatics Data Skills](http://note.youdao.com/noteshare?id=e2364c0cde65fdb01afadf6a06f5a187)》
+
 
 **习题书**:
 
-《生物信息学实验教程》  吕巍，李滨 编
+《[Bioinformatics Data Skills](http://note.youdao.com/noteshare?id=e2364c0cde65fdb01afadf6a06f5a187)》
 
 **参考书**：
 
 生物信息：
 
-1. 《Bioinformatics and Functional Genomics》 by Jonathan Pevsner 
-2. 《第二代测序信息处理》 \[美\] 布朗（Brown S.M.）著；于军 主译 
+1. 《生物信息学》（第2版）李霞，雷健波，李亦学 等 编
+
+2. 《Bioinformatics and Functional Genomics》 by Jonathan Pevsner 
 
 编程相关：
 
