@@ -14,7 +14,7 @@
 
 ---
 
-### 主要教材和参考书
+### 推荐教材和参考书
 
 **推荐教材**:
 
@@ -102,8 +102,6 @@
    * 《R语言实战》 \(《R in action》\)
 
 4. 《[Bioinformatics Data Skills](http://a.co/1wYbUB5)》
-
-
 
 ---
 
