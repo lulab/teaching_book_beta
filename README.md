@@ -1,7 +1,5 @@
 # 生物信息学实践
 
-**Bioinformatics in Action**
-
 > **格物致知  知行合一**
 
 ![](img/intro.png)
@@ -14,23 +12,13 @@
 
 2016年6月于清华园
 
-> 大学之道 在明明德 在亲民 在止于至善
->
-> 知止而后有定 定而后能静 静而后能安 安而后能虑 虑而后能得
-
 ---
 
 ### 主要教材和参考书
 
-**主教材**:
+**推荐教材**:
 
 《[生物信息学](http://ibi.zju.edu.cn/bioinplant/courses/jianyaomulu.htm)》主编：樊龙江
-
-
-
-**习题书**:
-
-《[Bioinformatics Data Skills](http://note.youdao.com/noteshare?id=e2364c0cde65fdb01afadf6a06f5a187)》
 
 **参考书**：
 
@@ -38,7 +26,7 @@
 
 1. 《生物信息学》（第2版）李霞，雷健波，李亦学 等 编
 
-2. 《Bioinformatics and Functional Genomics》 by Jonathan Pevsner 
+2. 《Bioinformatics and Functional Genomics》 by Jonathan Pevsner
 
 编程相关：
 
@@ -112,6 +100,10 @@
 
    * Quick R \([online](http://www.statmethods.net/)\)
    * 《R语言实战》 \(《R in action》\)
+
+4. 《[Bioinformatics Data Skills](http://a.co/1wYbUB5)》
+
+
 
 ---
 
