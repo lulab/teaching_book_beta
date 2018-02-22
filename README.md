@@ -14,6 +14,20 @@
 
 ---
 
+### 预修课程准备
+
+1. 基本生物课程：如《遗传学》或《分子生物学》
+
+2. 基本统计课程：如《概率论》或《生物统计》
+
+3. 基本数学课程：如《线性代数》
+
+4. 基本物理课程：如《物理化学》或《生物物理》
+
+5. 基本计算机课程：如 C语言
+
+
+
 ### 推荐教材和参考书
 
 **推荐教材**:
@@ -138,17 +152,7 @@
 
 We also provide a Linux virtural machine \([https://pan.baidu.com/s/1ETkey](https://pan.baidu.com/s/1ETkey)\), which has some bioinfo software pre-installed. You can download the file and open it with **VirtualBox** in Windows or Mac.
 
-### 预修课程准备
-
-1. 基本生物课程：如《遗传学》或《分子生物学》
-
-2. 基本统计课程：如《概率论》或《生物统计》
-
-3. 基本数学课程：如《线性代数》
-
-4. 基本物理课程：如《物理化学》或《生物物理》
-
-5. 基本计算机课程：如 Linux基础 ，C或Python或Perl
+### 
 
 
 
