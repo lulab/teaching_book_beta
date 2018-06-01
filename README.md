@@ -148,7 +148,7 @@
 
 ### 虚拟机
 
-We also provide a Linux virtural machine \(Download links: [TsinghuaCloud](https://cloud.tsinghua.edu.cn/d/08cb34ba57cf44b8aea9/) or [BaiduYun](https://pan.baidu.com/s/1ETkey)\) , which has some bioinfo software pre-installed. You can download the file and open it with **VirtualBox** in Windows or Mac.
+We also provide a Linux virtural machine \(Download links: [TsinghuaCloud](https://cloud.tsinghua.edu.cn/d/08cb34ba57cf44b8aea9/) or [BaiduYun](https://pan.baidu.com/s/1ETkey)\) , which has some bioinfo software pre-installed. You can download the file and open it with [VirtualBox](https://www.virtualbox.org/wiki/Downloads) in Windows or Mac.
 
 ### 
 
